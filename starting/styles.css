@@ -1,0 +1,188 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+
+nav img {
+    width: 5rem;
+    height: 100%;
+}
+
+nav ul {
+    height: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #031313;
+}
+
+nav li {
+    float: left;
+}
+
+
+nav a {
+    border: #031313 solid .1rem;
+    color: white;
+    text-align: center;
+    padding: .9rem 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-radius: .1rem;
+    border: #000000 solid .1rem;
+    background-color: #000000;
+}
+
+
+/* Home */
+
+.home {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/* About */
+
+.about {
+    background-color: #EBE8C7;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.about h2 {
+    padding-bottom: 1rem;
+}
+
+/* Riding */
+
+.riding {
+    background-color: #EBE8C7;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.riding-cont {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.week-cont, .month-cont{
+    flex: 1;
+    flex-basis: 100%;
+    background-color: #FEFEE8;
+    border: #7A8676 solid .1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Contact */
+
+.contact {
+    margin-top: 1rem;
+    background-color: #EBE8C7;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.contact h3 {
+    padding: 1rem 0;
+}
+
+.contact-cont {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.contact-item {
+    flex: 1;
+    flex-basis: 100%;
+    background-color: #FEFEE8;
+    border: #7A8676 solid .1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: #031313;
+    font-size: .5rem;
+    text-align: left;
+    padding: 1rem 1rem;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: .5rem;
+        padding: 1rem 0;
+    }
+
+    nav li {
+        float: none;
+    }
+
+    nav a {
+        border: none;
+        color: white;
+        text-align: center;
+        padding: 0 0;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        border: none;
+        background-color: #000000;
+    }
+
+    .riding-cont {
+        flex-direction: column;
+    }
+
+    .contact-cont {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        flex: 1;
+        flex-basis: 100%;
+        background-color: #FEFEE8;
+        border: #7A8676 solid .1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+}
